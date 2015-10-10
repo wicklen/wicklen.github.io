@@ -67,8 +67,8 @@ var prod = {
 
 // Deploy
 var deploy = {
-    path: basePath.dev + '**/*.*',
-    branch: "gh-pages"
+    path: basePath.prod + '**/*.*',
+    branch: "master"
 };
 
 // Error handling
