@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Gustav Wicklen Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="shortcut icon" type="image/ico" href="img/favicon.ico"/>
+    </head>
+    <body>
+        <header>
+            <nav class= "navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div> <!-- navbar-header -->
+
+                    <a class="navbar-brand" href="#featured"><h1> Gustav Wicklén<span class="subhead">Portfolio</span></h1></a>
+                        <div class= "collapse navbar-collapse" id="collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="active"><a href="#featured">Hem</a></li>
+                                <li><a href="#ommig">Om mig</a></li>
+                                <li><a href="#projekt">Projekt</a></li>
+                                <li><a href="#kontakt">kontakt</a></li>
+                            </ul>
+                        </div>  <!-- collapse navbar-collapse -->
+                  </div> <!-- container -->
+            </nav>
+
+            <div class="carousel fade" data-ride="carousel" id="featured">
+                <ol class="carousel-indicators"></ol>
+                <div class="carousel-inner fullheight">
+                    <div class="item active"><img src="img/carousel_one.jpeg">
+                        <h1 class="element"></h1>
+                    </div>
+                    <div class="item"><img src="img/carousel_two.jpeg">
+                        <div class="element"></div>
+                    </div>
+                    <div class="item"><img src="img/carousel_three.jpeg">
+                        <div class="element"></div>
+                    </div>
+                </div> <!-- carousel-inner -->
+
+                <a class="left carousel-control" href="#featured" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#featured" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div> <!-- featured carousel -->
+        </header>
+
+        <div class="site">
+            {% block content %}{% endblock %}
+        </div>
+
+        <footer class="page kontakt">
+            <div class="content container-fluid">
+                <div class="row">
+                    <div class="social col-md-3 col-sm-3 col-xs-3">
+                        <a href="mailto:g.wicklen@gmail.com" target="_blank" title="send me a mail"><i class="fa fa-envelope fa-3x"></i></a>
+                        <span><p>Send me an email</p></span>
+                    </div>
+
+                    <div class="social col-md-3 col-sm-3 col-xs-3">
+                        <a href="https://twitter.com/GWicklen" target="_blank" title="Follow me on Twitter"><i class="fa fa-twitter fa-3x"></i></a>
+                        <span><p>Check out my Twitter</p></span>
+                    </div>
+
+                    <div class="social col-md-3 col-sm-3 col-xs-3">
+                        <a href="https://github.com/wicklen" target="_blank" title="See my work at Github"><i class="fa fa-github fa-3x"></i></a>
+                        <span><p>Take a look at my github</p></span>
+                    </div>
+
+                    <div class="social col-md-3 col-sm-3 col-xs-3">
+                        <a href="https://instagram.com/johnnybode" target="_blank" title="See my work at Github"><i class="fa fa-instagram fa-3x"></i></a>
+                        <span><p>Check out my Instagram</p></span>
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </footer>
+        <script src="js/app.js"></script>
+    </body>
+</html>
